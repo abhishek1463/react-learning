@@ -1,0 +1,26 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react start 8/18/2026 with in 5 days ok ",
+  "homepage": "https://github.com/abhishek1463/react-learning#readme",
+  "bugs": {
+    "url": "https://github.com/abhishek1463/react-learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek1463/react-learning.git"
+  },
+  "license": "ISC",
+  "author": "me",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "reactdom": "^2.0.0"
+  }
+}
