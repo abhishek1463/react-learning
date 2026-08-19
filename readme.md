@@ -8,6 +8,8 @@ npx parcel index.html  ( in packge.json remove the main:  so we can say parcel  
  npx parcel build index.html (Production build → optimizes/minifies/bundles the files → creates the final files that you can deploy/host.)
 
 ```
+after install react, reactDOM in app.js we can't import directly so we need to do type="module" in the script tag in the index.html as Normal JavaScript scripts don't allow import/export. To use import/export, we make the script a JavaScript module using type="module".  <script type="module" src="./app.js"></script>
+
 npx runs Parcel → Parcel takes index.html as the entry point → processes/bundles your HTML, CSS, JS/React code → starts the development server → your app is available in the browser.
 
 main is optional; it is mainly used to specify the JavaScript entry point of a package/library. For a Parcel application, we can directly specify index.html with npx parcel index.html.
