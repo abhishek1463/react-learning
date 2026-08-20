@@ -1,39 +1,44 @@
    
+import { div, h1 } from "framer-motion/client";
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-   
-// <div id="parent">
-//   <div id="child">
-//     <h1>I'm h1 tag</h1>
-//     <h2>I'm h2 tag</h2>
-//   </div>
-
-//   <div id="child2">
-//     <h1>I'm h1 tag</h1>
-//     <h2>I'm h2 tag</h2>
-//   </div>
-// </div>    make this in reactt just day 1 change onthing else so don't worry bro 
 
 
 
-   const parent = React.createElement("div", {id:"parent"}, 
-    [
-        React.createElement("div", {id:"child", key:"child1"},  
-            [   
-                React.createElement("h1", {key:"h1-1"}, "this is one"), 
-                React.createElement("h1", {key:"h1-2"}, "this is one") 
-            ]
-        ),
+// JSX → Parcel/Babel → React.createElement() → React Element (JS Object)
+const jsxHeading = (
+<h1 id="heading" >
+    Namaste React using JSX
+    </h1>
+);
+const reactelemetn=<h1 className="parent"> this is elemnte right </h1>
+const Component=()=> (
+    <h1>
+        this is a component dear don't worry just learn it 1
+    </h1>
+)
 
-        React.createElement("div", {id:"child2", key:"child2"}, 
-            [   
-                React.createElement("h1", {key:"h1-3"}, "this is one"), 
-                React.createElement("h1", {key:"h1-4"}, "this is one") 
-            ]
-        )
-    ]  
+// functionla component (function reutn a jsx )
+const Heading=()=> {
+    return (<div>
+    
+        <h1> functional component type 2</h1>
+    </div>
+    );
+};
+const Heading2= ()=>(
+    <div>
+        <h1> Functional component is her 3</h1>
+<Component/>
+<Heading2/>
+
+
+    </div>
 );
 
-    const root=ReactDOM.createRoot(document.getElementById("root"));
-     root.render(parent);
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<Heading2/>);
